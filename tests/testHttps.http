@@ -1,0 +1,35 @@
+### check 
+GET http://localhost:8080/
+
+### check proframming - languages
+GET http://localhost:8080/programming-languages
+
+### check page 2
+
+GET http://localhost:8080/programming-languages?page=2
+
+### create new data 
+
+POST http://localhost:8080/programming-languages
+Content-Type: application/json
+
+{
+    "name": 124,
+    "released_year": 2011,
+    "githut_rank": 13,
+    "pypl_rank": 20,
+    "tiobe_rank": 25
+}
+
+
+### check update 
+
+PUT http://localhost:8080/programming-languages/17
+Content-Type: application/json
+
+{"name":"dart", "released_year": 2011, "githut_rank": 12, "pypl_rank": 20, "tiobe_rank": 25}
+
+### check delete 
+
+DELETE http://localhost:8080/programming-languages/18
+
